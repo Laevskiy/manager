@@ -13,7 +13,7 @@ win.geometry('450x600')
 def data_del():
 
     wb_list.delete_rows(b)
-    wb.save(filename='D:\kursovaja\photo_2022\photo_data_new.xlsx')
+    wb.save(filename='D:\over_one\kurs_2022\photo_data_new.xlsx')
 
 
 def otrisovka_suz_dan(city_old,name_old,tel_old,price_old,time_old,start_old):
@@ -64,7 +64,7 @@ def proverka():
     out_2_1 = "Дата:",out_2,"уже ЗАБРОНИРОВАННА"
     out_2_2 = "Дата:",out_2,"СВОБОДНА! Хотите записать её ?"
     global wb
-    wb = openpyxl.reader.excel.load_workbook(filename='D:\kursovaja\photo_2022\photo_data_new.xlsx')
+    wb = openpyxl.reader.excel.load_workbook(filename='D:\over_one\kurs_2022\photo_data_new.xlsx')
     global wb_list
     wb_list = wb[year]
     # a - поиск количества строк
