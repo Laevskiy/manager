@@ -11,7 +11,6 @@ win.geometry('450x600')
 
 # 1 ФУНКЦИИ
 
-
 def ochistka_01():
     city_old_1.grid_forget()
     name_old_1.grid_forget()
@@ -173,7 +172,7 @@ def proverka():
             # Отрисовка кнопок перезаписи
             global d_2
             d_2 = tk.Label(win, text= out_2_1)
-            d_2.grid(row=3, column=0, padx=10, pady=10)
+            d_2.grid(row=3, column=0, columnspan=3,padx=10, pady=10)
             otrisovka_suz_dan(city_old,name_old,tel_old,price_old,time_old,start_old)
             otrisovka_lab()
             but_perezapis()
@@ -181,7 +180,7 @@ def proverka():
     else:
 
         d_2 = tk.Label(win, text=out_2_2)
-        d_2.grid(row=3, column=0, padx=10, pady=10)
+        d_2.grid(row=3, column=0, columnspan=3,padx=10, pady=10)
         hint_2.grid(row=3, column=0, padx=10, pady=10)
         btn_3_yes.grid(row = 5 , column=0, padx=10, pady=10)
         btn_3_NO.grid(row = 5 , column=1, padx=10, pady=10)
